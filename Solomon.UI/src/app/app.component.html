@@ -1,0 +1,127 @@
+<div class="main-container">
+    <div class="alert alert-app-level">
+        ...
+    </div>
+    <header class="header header-2">
+        <div class="branding">
+            <a href="..." class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">Project Solomon</span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <a href="..." class="nav-link nav-icon">
+                <clr-icon shape="cloud"></clr-icon>
+            </a>
+            <a href="..." class="active nav-link nav-icon">
+                <clr-icon shape="folder"></clr-icon>
+            </a>
+        </div>
+        <form class="search">
+            <label for="search_input">
+            <input id="search_input" type="text" placeholder="Search for keywords...">
+        </label>
+        </form>
+        <div class="header-actions">
+            <clr-dropdown>
+                <button class="nav-icon" clrDropdownTrigger>
+                <clr-icon shape="user"></clr-icon>
+                <clr-icon shape="caret down"></clr-icon>
+            </button>
+                <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                    <a href="..." clrDropdownItem>About</a>
+                    <a href="..." clrDropdownItem>Preferences</a>
+                    <a href="..." clrDropdownItem>Log out</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
+    </header>
+    <nav class="subnav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Runs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Workflows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Handlers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Triggers</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <div class="content-area">
+
+
+            <p>
+                Content Area
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu odio nisi. Vestibulum dignissim eget massa sit amet feugiat.
+                Quisque auctor mattis quam eu suscipit. Morbi ipsum risus, feugiat vitae sem at, tincidunt elementum magna.
+                Phasellus tristique posuere dui, ut tempus felis sagittis quis. Integer iaculis ultrices elit, sed venenatis
+                eros. Vivamus interdum semper velit eget gravida. Sed finibus eget lacus sed semper. Suspendisse fringilla,
+                tellus in molestie cursus, sapien purus volutpat lacus, eget venenatis erat est vitae libero. Aliquam et
+                orci hendrerit, consequat purus non, imperdiet ipsum.
+
+                <button class="btn btn-primary" (click)="basic = true">Show modal</button>
+
+
+
+                <clr-modal [(clrModalOpen)]="basic">
+                    <h3 class="modal-title">I have a nice title</h3>
+                    <div class="modal-body">
+                        <p>But not much to say...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+                        <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+                    </div>
+                </clr-modal>
+
+
+
+            </p>
+
+
+
+
+        </div>
+        <nav class="sidenav">
+            <section class="sidenav-content">
+                <a href="..." class="nav-link active">
+                    Nav Element 1
+                </a>
+                <a href="..." class="nav-link">
+                    Nav Element 2
+                </a>
+                <section class="nav-group collapsible">
+                    <input id="tabexample1" type="checkbox">
+                    <label for="tabexample1">Collapsible Nav Element</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Link 1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                    </ul>
+                </section>
+                <section class="nav-group">
+                    <input id="tabexample2" type="checkbox">
+                    <label for="tabexample2">Default Nav Element</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Link 1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                        <li><a class="nav-link active">Link 3</a></li>
+                        <li><a class="nav-link">Link 4</a></li>
+                        <li><a class="nav-link">Link 5</a></li>
+                        <li><a class="nav-link">Link 6</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </div>
+</div>
