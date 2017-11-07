@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject>Solomon.Master.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solomon.Infrastructure\Solomon.Master.Infrastructure.CouchDB.csproj" />
+    <ProjectReference Include="..\Solomon.Master.RabbitMq\Solomon.Master.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>

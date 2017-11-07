@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <AssemblyName>Solomon.Master.base</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solomon.Base.Trigger\Solomon.Base.Trigger.csproj" />
+    <ProjectReference Include="..\Solomon.Base\Solomon.Base.csproj" />
+    <ProjectReference Include="..\Solomon.Handler.Base\Solomon.Handler.Base.csproj" />
+  </ItemGroup>
+
+</Project>

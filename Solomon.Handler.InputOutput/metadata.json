@@ -1,0 +1,13 @@
+﻿{
+  "name": "io_1.1.0",
+  "description": "A handler that can transform Input to Output",
+  "parameters": [
+    {
+      "name": "transformation",
+      "display": "Transformation Code",
+      "description": "Bum Bum",
+      "pattern": null,
+      "type": "multiline"
+    }
+  ]
+}

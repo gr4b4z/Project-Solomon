@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solomon.Queue.RabbitMq\Solomon.RabbitMq.csproj" />
+    <ProjectReference Include="..\Solomon.Worker.Base\Solomon.Worker.csproj" />
+  </ItemGroup>
+
+</Project>
